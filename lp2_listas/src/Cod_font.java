@@ -1,3 +1,9 @@
+/*Diagonal principal: i == j
+
+Acima da diagonal: i < j
+
+Abaixo da diagonal: i > j */
+
 import java.util.Scanner;;
 
 public class Cod_font {

@@ -34,7 +34,13 @@ public class Ex_11 {
     }
 
     public static int[][] fazerMatriz(int[][]mat, int[] diagPrinc) {
-        return mat;
+        int[][] matAlterada = new int[6][6];
+        for (int i = 0; i < mat.length; i++) {
+            for (int j = 0; j < mat[i].length; j++) {
+                matAlterada[i][j] = mat[i][j] * diagPrinc[i];
+            }
+        }
+        return matAlterada;
     }
 
     public static int[] encontrarDiagonalPrincipal(int[][]mat) {
@@ -44,6 +50,7 @@ public class Ex_11 {
             for (int j = 0; j < vet.length; j++) {
                 if (i==j) {
                     vet[posicao] = mat[i][j];
+                    posicao++;
                 }
             }
         }
