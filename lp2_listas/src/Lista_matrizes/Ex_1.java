@@ -9,7 +9,7 @@ public class Ex_1 {
     public static void main(String[] args) {
         int[][] mat = new int[5][5];
         imprimir("digite os valores da matriz 5X5: ");
-        lerMatriz(mat);
+        mat = lerMatriz(mat);
 
         int soma = calcularSomaElementos(mat);
         imprimir("\nsoma dos elementos da matriz: " + soma);

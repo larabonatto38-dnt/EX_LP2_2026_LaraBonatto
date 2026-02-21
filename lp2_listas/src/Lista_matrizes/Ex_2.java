@@ -11,7 +11,7 @@ public class Ex_2 {
     public static void main(String[] args) {
         int[][] mat = new int[6][6];
         imprimir("digite os valores da matriz 6X6: ");
-        lerMatriz(mat);
+        mat = lerMatriz(mat);
 
         int soma = calcularSomaElementos(mat);
         imprimir("\nsoma dos elementos da diagonal principal da matriz: " + soma);

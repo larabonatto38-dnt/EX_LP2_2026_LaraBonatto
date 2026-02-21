@@ -12,7 +12,7 @@ public class Ex_6 {
     public static void main(String[] args) {
         int[][] matA = new int[8][8];
         imprimir("digite os valores da matriz 8X8: ");
-        lerMatriz(matA);
+        matA = lerMatriz(matA);
 
         int maiorA = encontrarMaior(matA);
         imprimir("\nmaior elemento da diagonal principal da matriz A: " + maiorA);

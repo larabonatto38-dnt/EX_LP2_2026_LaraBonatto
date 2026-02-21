@@ -11,7 +11,7 @@ public class Ex_5 {
     public static void main(String[] args) {
         int[][] mat = new int[6][6];
         imprimir("digite os valores da matriz 6X6: ");
-        lerMatriz(mat);
+        mat = lerMatriz(mat);
 
         int menor = encontrarMenorElemento(mat);
         imprimir("\nmenor elemento da diagonal secundaria: " + menor);
