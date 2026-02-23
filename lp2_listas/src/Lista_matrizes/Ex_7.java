@@ -1,7 +1,7 @@
 package Lista_matrizes;
 
 import java.util.Scanner;
-//TA DANDO ERRADO E N SEI RESOLVER
+//ficou pra fazer na sala de aula
 //7) Escreva um programa que receba duas matrizes A(4,6) e B(6,4) e retorne uma matriz C, que
 //seja o produto matricial de M por N.
 public class Ex_7 {
@@ -26,14 +26,10 @@ public class Ex_7 {
 
     public static int[][] multiplicarMatrizes(int[][] A, int[][] B) {
         int[][]C = new int[4][4];
-        int cont = 0;
         for (int i = 0; i < C.length; i++) {
-            int soma=0;
             for (int j = 0; j < C.length; j++) {
-                soma+= A[i][cont] * B[cont][j];
-                C[i][j] = soma;
+                
             }
-            cont++;
         }
         return C;
     }
@@ -41,7 +37,7 @@ public class Ex_7 {
     public static void imprimirMatriz(int[][] mat) {
         imprimir("\naqui esta a matriz C: ");
         for (int i = 0; i < mat.length; i++) {
-            for (int j = 0; j < mat.length; j++) {
+            for (int j = 0; j < mat[i].length; j++) {
                 System.out.print(" " + mat[i][j]);
             }
             System.out.println();
