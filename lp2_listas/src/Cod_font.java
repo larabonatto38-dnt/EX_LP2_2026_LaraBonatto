@@ -1,3 +1,6 @@
+/*git config --global user.name "Lara"
+git config --global user.email "larabonatto38@gmail.com" */
+
 /*Diagonal principal: i == j
 
 Acima da diagonal: i < j
