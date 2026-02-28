@@ -35,7 +35,6 @@ public class Matrizes_ImagensBinarias {
         return mat;
     }
 
-    // arrumar
     public static int[][] preencherMatB(int[][] mat) {
         for (int i = 1; i < mat.length - 1; i++) {
             for (int j = 1; j < mat[i].length - 1; j++) {
@@ -46,6 +45,11 @@ public class Matrizes_ImagensBinarias {
                 mat[8][j] = 1;
             }
         }
+        mat[2][7] = 1;
+        mat[3][7] = 1;
+        mat[1][8] = 0;
+        mat[2][8] = 0;
+        mat[3][8] = 0;
         return mat;
 
     }
@@ -62,7 +66,6 @@ public class Matrizes_ImagensBinarias {
 
     }
 
-    // arrumar
     public static int[][] preencherMatD(int[][] mat) {
         for (int i = 1; i < mat.length - 1; i++) {
             for (int j = 1; j < mat[i].length - 1; j++) {
@@ -72,8 +75,9 @@ public class Matrizes_ImagensBinarias {
                 mat[8][j] = 1;
             }
         }
+        mat[1][8] = 0;
+        mat[8][8] = 0;
         return mat;
-
     }
 
     public static int[][] preencherMatE(int[][] mat) {
@@ -101,13 +105,19 @@ public class Matrizes_ImagensBinarias {
 
     }
 
-    // arrumar
     public static int[][] preencherMatG(int[][] mat) {
         for (int i = 1; i < mat.length - 1; i++) {
             for (int j = 1; j < mat[i].length - 1; j++) {
                 mat[i][1] = 1;
-                mat[8][j] = 1;
                 mat[1][j] = 1;
+                mat[8][j] = 1;
+                // meia linha da direita
+                if (j == 8 && i >= 5)
+                    mat[i][j] = 1;
+                // linhazinha do miolo
+                if (i == 5 && j >= 5) {
+                    mat[i][j] = 1;
+                }
             }
         }
         return mat;
@@ -139,29 +149,36 @@ public class Matrizes_ImagensBinarias {
 
     }
 
-    // arrumar
     public static int[][] preencherMatJ(int[][] mat) {
         for (int i = 1; i < mat.length - 1; i++) {
             for (int j = 1; j < mat[i].length - 1; j++) {
-                mat[i][8] = 1;
                 mat[8][j] = 1;
-                mat[1][j] = 1;
+                mat[i][8] = 1;
+                // cabeça do J
+                if (i == 1 && j >= 5) {
+                    mat[i][j] = 1;
+                }
+                // pé do J
+                mat[7][1] = 1;
             }
         }
         return mat;
-
     }
 
-    // arrumar
     public static int[][] preencherMatK(int[][] mat) {
-        int tamanho = 10;
+        mat[1][7] = 1;
+        mat[2][6] = 1;
+        mat[3][5] = 1;
+        mat[4][4] = 1;
+
+        mat[5][4] = 1;
+        mat[6][5] = 1;
+        mat[7][6] = 1;
+        mat[8][7] = 1;
+
         for (int i = 1; i < mat.length - 1; i++) {
             for (int j = 1; j < mat[i].length - 1; j++) {
-                mat[i][1] = 1;
-                mat[i][tamanho - 1 - i] = 1;
-                if (i == j + 2) {
-                    mat[i][j] = 1;
-                }
+                mat[i][3] = 1;
             }
         }
         return mat;
@@ -179,7 +196,6 @@ public class Matrizes_ImagensBinarias {
 
     }
 
-    // arrumar
     public static int[][] preencherMatM(int[][] mat) {
         for (int i = 1; i < mat.length - 1; i++) {
             for (int j = 1; j < mat[i].length - 1; j++) {
@@ -187,16 +203,24 @@ public class Matrizes_ImagensBinarias {
                 mat[i][8] = 1;
             }
         }
+        mat[4][4] = 1;
+        mat[4][5] = 1;
+        mat[3][3] = 1;
+        mat[2][2] = 1;
+        mat[3][6] = 1;
+        mat[2][7] = 1;
         return mat;
 
     }
 
-    // arrumar
     public static int[][] preencherMatN(int[][] mat) {
         for (int i = 1; i < mat.length - 1; i++) {
             for (int j = 1; j < mat[i].length - 1; j++) {
                 mat[i][1] = 1;
                 mat[i][8] = 1;
+                if (i == j) {
+                    mat[i][j] = 1;
+                }
             }
         }
         return mat;
@@ -212,24 +236,29 @@ public class Matrizes_ImagensBinarias {
                 mat[8][j] = 1;
             }
         }
+        mat[1][1] = 0;
+        mat[1][8] = 0;
+        mat[8][8] = 0;
+        mat[8][1] = 0;
         return mat;
 
     }
 
-    //arrumar
     public static int[][] preencherMatP(int[][] mat) {
         for (int i = 1; i < mat.length - 1; i++) {
             for (int j = 1; j < mat[i].length - 1; j++) {
                 mat[i][1] = 1;
                 mat[1][j] = 1;
                 mat[4][j] = 1;
+                if (j == 8 && i <= 4) {
+                    mat[i][j] = 1;
+                }
             }
         }
         return mat;
 
     }
 
-    //arrumar
     public static int[][] preencherMatQ(int[][] mat) {
         for (int i = 1; i < mat.length - 1; i++) {
             for (int j = 1; j < mat[i].length - 1; j++) {
@@ -239,11 +268,11 @@ public class Matrizes_ImagensBinarias {
                 mat[8][j] = 1;
             }
         }
+        mat[6][6] = 1;
+        mat[7][7] = 1;
         return mat;
-
     }
 
-    //arrumar
     public static int[][] preencherMatR(int[][] mat) {
         for (int i = 1; i < mat.length - 1; i++) {
             for (int j = 1; j < mat[i].length - 1; j++) {
@@ -255,20 +284,25 @@ public class Matrizes_ImagensBinarias {
                 mat[4][j] = 1;
             }
         }
+        mat[2][8] = 1;
+        mat[3][8] = 1;
         return mat;
-
     }
 
-    //arrumar
     public static int[][] preencherMatS(int[][] mat) {
         for (int i = 1; i < mat.length - 1; i++) {
             for (int j = 1; j < mat[i].length - 1; j++) {
-                mat[i][1] = 1;
+                mat[1][j] = 1;
                 mat[8][j] = 1;
+                mat[4][j] = 1;
             }
         }
+        mat[2][1] = 1;
+        mat[3][1] = 1;
+        mat[5][8] = 1;
+        mat[6][8] = 1;
+        mat[7][8] = 1;
         return mat;
-
     }
 
     public static int[][] preencherMatT(int[][] mat) {
@@ -280,7 +314,6 @@ public class Matrizes_ImagensBinarias {
             }
         }
         return mat;
-
     }
 
     public static int[][] preencherMatU(int[][] mat) {
@@ -292,62 +325,94 @@ public class Matrizes_ImagensBinarias {
             }
         }
         return mat;
-
     }
 
     public static int[][] preencherMatV(int[][] mat) {
         for (int i = 1; i < mat.length - 1; i++) {
-            for (int j = 1; j < mat[i].length - 1; j++) {
-                mat[i][1] = 1;
-                mat[8][j] = 1;
-            }
+            mat[i][1] = 1;
+            mat[i][8] = 1;
         }
-        return mat;
+        mat[8][4] = 1;
+        mat[8][5] = 1;
+        mat[7][3] = 1;
+        mat[6][2] = 1;
+        mat[7][6] = 1;
+        mat[6][7] = 1;
 
+        mat[8][1] = 0;
+        mat[7][1] = 0;
+        mat[6][1] = 0;
+        mat[8][8] = 0;
+        mat[7][8] = 0;
+        mat[6][8] = 0;
+        return mat;
     }
 
     public static int[][] preencherMatW(int[][] mat) {
         for (int i = 1; i < mat.length - 1; i++) {
-            for (int j = 1; j < mat[i].length - 1; j++) {
-                mat[i][1] = 1;
-                mat[8][j] = 1;
-            }
+            mat[i][1] = 1;
+            mat[i][8] = 1;
         }
-        return mat;
+        mat[6][4] = 1;
+        mat[6][5] = 1;
+        mat[7][3] = 1;
+        mat[7][6] = 1;
+        mat[8][2] = 1;
+        mat[8][7] = 1;
 
+        mat[8][1] = 0;
+        mat[8][8] = 0;
+        return mat;
     }
 
     public static int[][] preencherMatX(int[][] mat) {
+        int tamanho = 10;
         for (int i = 1; i < mat.length - 1; i++) {
             for (int j = 1; j < mat[i].length - 1; j++) {
-                mat[i][1] = 1;
-                mat[8][j] = 1;
+                mat[i][tamanho - i - 1] = 1;
+                if (i == j) {
+                    mat[i][j] = 1;
+                }
             }
         }
         return mat;
-
     }
 
     public static int[][] preencherMatY(int[][] mat) {
         for (int i = 1; i < mat.length - 1; i++) {
             for (int j = 1; j < mat[i].length - 1; j++) {
-                mat[i][1] = 1;
-                mat[8][j] = 1;
+                mat[i][4] = 1;
+                mat[i][5] = 1;
+                if (i < 4) {
+                    if (i == j) {
+                        mat[i][j] = 1;
+                    }
+                }
             }
         }
-        return mat;
+        mat[1][4] = 0;
+        mat[2][4] = 0;
+        mat[3][4] = 0;
+        mat[1][5] = 0;
+        mat[2][5] = 0;
+        mat[3][5] = 0;
 
+        mat[1][8] = 1;
+        mat[2][7] = 1;
+        mat[3][6] = 1;
+        return mat;
     }
 
     public static int[][] preencherMatZ(int[][] mat) {
+        int tamanho = 10;
         for (int i = 1; i < mat.length - 1; i++) {
             for (int j = 1; j < mat[i].length - 1; j++) {
-                mat[i][1] = 1;
+                mat[i][tamanho - i - 1] = 1;
+                mat[1][j] = 1;
                 mat[8][j] = 1;
             }
         }
         return mat;
-
     }
 
     public static int[][] matrizAcordoLetra(int[][] mat, char letra) {
