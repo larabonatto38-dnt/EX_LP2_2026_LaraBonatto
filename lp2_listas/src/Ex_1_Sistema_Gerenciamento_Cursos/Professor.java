@@ -71,4 +71,10 @@ public class Professor {
     public void setEspecializacao(String especializacao) {
         this.especializacao = especializacao;
     }
+
+    @Override
+    public String toString() {
+        return "Professor\n idProf = " + idProf + "\n nome = " + nome + "\n sobrenome = " + sobrenome + "\n cpf = " + cpf
+                + "\n email = " + email + "\n especializacao = " + especializacao;
+    }
 }

@@ -2,6 +2,10 @@ package Ex_1_Sistema_Gerenciamento_Cursos;
 
 import java.util.Scanner;
 import Ex_1_Sistema_Gerenciamento_Cursos.Aluno;
+import Ex_1_Sistema_Gerenciamento_Cursos.Curso;
+import Ex_1_Sistema_Gerenciamento_Cursos.Disciplina;
+import Ex_1_Sistema_Gerenciamento_Cursos.Professor;
+import Ex_1_Sistema_Gerenciamento_Cursos.Turma;
 
 /*
 Exercício 1: Sistema de Gerenciamento de Cursos
@@ -26,7 +30,7 @@ public class Main {
     final static Scanner LER = new Scanner(System.in);
 
     public static void main(String[] args) {
-        imprimir("...:::Sistema de Gerenciamento de Cursos:::...");
+        imprimir("\n...:::Sistema de Gerenciamento de Cursos:::...\n");
 
         //objeto aluno01
         Aluno aluno01 = new Aluno();
@@ -37,6 +41,16 @@ public class Main {
         aluno01.setEmail("jubis@gmail.com");
         aluno01.setDataNascimento(19082022);
 
+        //objeto turma01
+        Turma turma01 = new Turma();
+        turma01.setCodigoTurma(011);
+        turma01.setAno(2026);
+        turma01.setSemestre(1);
+        turma01.setTurno("noturno");
+
+        //objet aluno01 - dentro de turma01
+        turma01.setAluno(aluno01);
+
         //objeto curso01
         Curso curso01 = new Curso();
         curso01.setCodigo(011);
@@ -44,12 +58,31 @@ public class Main {
         curso01.setCargaHorariaTotal(3600);
         curso01.setQuantidadeSemestres(8);
 
-        //objeto disciplina01 - dentro de curso01
-        //dentro de disciplina01 o professor01
+        //objeto turma01 - dentro de curso01
+        curso01.setTurma(turma01);
+
+        //objeto professor01
         Professor professor01 = new Professor(033, "Edmar", "Costa e Silva" , 666696967, "edmito@gmail.com" , "Doutorado em matematica");
+
+        //objeto disciplina01
         Disciplina disciplina01 = new Disciplina(022, "Cálculo 2", 20, "Áreas");
+
+        //dentro de disciplina01 - professor01
         disciplina01.setProfessor(professor01);
-        
+
+        //objeto disciplina01 - dentro de curso01
+        curso01.setDisciplina(disciplina01);
+
+        imprimir("...::TESTES::...\n");
+        imprimir(aluno01.toString());
+        imprimir(" ");
+        imprimir(curso01.toString());
+        imprimir(" ");
+        imprimir(disciplina01.toString());
+        imprimir(" ");
+        imprimir(professor01.toString());
+        imprimir(" ");
+        imprimir(turma01.toString());
     }
 
     public static void imprimir(String text) {

@@ -69,4 +69,10 @@ public class Curso {
     public void setTurma(Turma turma) {
         this.turma = turma;
     }
+
+    @Override
+    public String toString() {
+        return "Curso\n codigo = " + codigo + "\n nome = " + nome + "\n cargaHorariaTotal = " + cargaHorariaTotal
+                + "\n quantidadeSemestres = " + quantidadeSemestres + "\n disciplina = " + disciplina + "\n turma = " + turma;
+    }
 }

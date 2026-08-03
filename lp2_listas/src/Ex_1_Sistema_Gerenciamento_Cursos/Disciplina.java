@@ -67,4 +67,10 @@ public class Disciplina {
     public void setProfessor(Professor professor) {
         this.professor = professor;
     }
+
+    @Override
+    public String toString() {
+        return "Disciplina\n codigo = " + codigo + "\n nome = " + nome + "\n cargaHoraria = " + cargaHoraria + "\n ementa = "
+                + ementa + "\n professor = " + professor;
+    }
 }
