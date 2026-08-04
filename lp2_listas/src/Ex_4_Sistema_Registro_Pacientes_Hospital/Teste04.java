@@ -10,7 +10,17 @@ horários que devem ser administrados. A pessoa responsável pela administraçã
 medicamentos é a enfermeira.
 */
 
-public class Main {
+/*
+Enfermeira - cuida da prescricao que foi feita
+Internacao - tem o quarto
+Medicamento - ta dentro da prescricao
+Medico - prescreve os medicamentos
+Paciente - tem um medico responsavel
+prescricaoMedica - medicamentos prescrevidos e enfermeira responsavel
+Quarto - tem um paciente dentro
+*/
+
+public class Teste04 {
 
     final static Scanner LER = new Scanner(System.in);
 

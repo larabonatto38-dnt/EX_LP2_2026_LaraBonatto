@@ -25,7 +25,7 @@ Professor --> vai tar dentro da diciplina
 Turma --> vai tar dentro do curso
 */
 
-public class Main {
+public class Teste01 {
 
     final static Scanner LER = new Scanner(System.in);
 

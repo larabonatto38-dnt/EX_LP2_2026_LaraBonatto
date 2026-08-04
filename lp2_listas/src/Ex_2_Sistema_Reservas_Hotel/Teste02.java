@@ -20,7 +20,7 @@ RedeHoteis
 Reserva --> ta dentro de Quarto
 */
 
-public class Main {
+public class Teste02 {
 
     final static Scanner LER = new Scanner(System.in);
 

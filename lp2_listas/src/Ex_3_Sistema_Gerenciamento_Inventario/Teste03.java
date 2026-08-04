@@ -16,7 +16,7 @@ Pedido --> o Cleinte faz
 Produto --> esta dentro do Pedido que o cliente fez
 */
 
-public class Main {
+public class Teste03 {
 
     final static Scanner LER = new Scanner(System.in);
 

@@ -10,17 +10,17 @@ O cinema possui diversas salas. Cada sala exibe um filme em diversos horários
 determinado filme e determinada sessão escolhendo as cadeiras que são numeradas.
 */
 
-public class Main {
+public class Teste05 {
 
     final static Scanner LER = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        imprimir("\n...:::Sistema de Vendas de Ingressos para Cinema:::...\n");
+    //public static void main(String[] args) {
+   //     imprimir("\n...:::Sistema de Vendas de Ingressos para Cinema:::...\n");
         
 
         
-        imprimir("...::TESTES::...\n");
-    }
+   //     imprimir("...::TESTES::...\n");
+   // }
 
     public static void imprimir(String text) {
         System.out.println(text);
