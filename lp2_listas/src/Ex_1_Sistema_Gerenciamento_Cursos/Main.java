@@ -1,11 +1,11 @@
-package Ex_1_Sistema_Gerenciamento_Cursos;
+//package Ex_1_Sistema_Gerenciamento_Cursos;
 
 import java.util.Scanner;
-import Ex_1_Sistema_Gerenciamento_Cursos.Aluno;
-import Ex_1_Sistema_Gerenciamento_Cursos.Curso;
-import Ex_1_Sistema_Gerenciamento_Cursos.Disciplina;
-import Ex_1_Sistema_Gerenciamento_Cursos.Professor;
-import Ex_1_Sistema_Gerenciamento_Cursos.Turma;
+//import Ex_1_Sistema_Gerenciamento_Cursos.Aluno;
+//import Ex_1_Sistema_Gerenciamento_Cursos.Curso;
+//import Ex_1_Sistema_Gerenciamento_Cursos.Disciplina;
+//import Ex_1_Sistema_Gerenciamento_Cursos.Professor;
+//import Ex_1_Sistema_Gerenciamento_Cursos.Turma;
 
 /*
 Exercício 1: Sistema de Gerenciamento de Cursos

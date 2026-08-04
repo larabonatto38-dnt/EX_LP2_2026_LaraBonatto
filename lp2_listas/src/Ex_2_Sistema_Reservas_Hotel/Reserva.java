@@ -1,6 +1,4 @@
-package Ex_2_Sistema_Reservas_Hotel;
-
-import java.util.Date;
+//package Ex_2_Sistema_Reservas_Hotel;
 
 public class Reserva {
     private int codigoReserva;

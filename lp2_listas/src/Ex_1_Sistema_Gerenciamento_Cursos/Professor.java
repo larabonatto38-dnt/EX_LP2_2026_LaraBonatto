@@ -1,4 +1,4 @@
-package Ex_1_Sistema_Gerenciamento_Cursos;
+//package Ex_1_Sistema_Gerenciamento_Cursos;
 
 public class Professor {
     private int idProf;

@@ -1,4 +1,4 @@
-package Lista_matrizes;
+//package Lista_matrizes;
 import java.util.Scanner;
 
 //1) Escreva um programa que receba uma matriz A(5,5) e retorne a soma dos seus elementos.

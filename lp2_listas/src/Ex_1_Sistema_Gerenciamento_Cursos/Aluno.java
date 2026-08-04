@@ -1,4 +1,4 @@
-package Ex_1_Sistema_Gerenciamento_Cursos;
+//package Ex_1_Sistema_Gerenciamento_Cursos;
 
 public class Aluno {
     private String ra; //Registro Acadêmico (RA) é o seu número de matrícula oficial ou conjunto de dados que documenta toda a trajetória escolar ou universitária.

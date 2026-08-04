@@ -1,4 +1,4 @@
-package Ex_2_Sistema_Reservas_Hotel;
+//package Ex_2_Sistema_Reservas_Hotel;
 
 import java.util.Scanner;
 
