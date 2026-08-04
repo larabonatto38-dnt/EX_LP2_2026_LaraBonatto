@@ -3,7 +3,8 @@ public class Pedido {
     private int dataPedido;
     private boolean status; //entregue?
     private int valorTotal;
-    private itemPedido itemPedido;
+    private Cliente clientePidao;
+    private Produto produtoPedidoCliente;
     
     public Pedido(){ 
     }
@@ -40,12 +41,26 @@ public class Pedido {
         this.valorTotal = valorTotal;
     }
 
-    public itemPedido getItemPedido() {
-        return itemPedido;
+    public Cliente getClientePidao() {
+        return clientePidao;
     }
 
-    public void setItemPedido(itemPedido itemPedido) {
-        this.itemPedido = itemPedido;
+    public void setClientePidao(Cliente clientePidao) {
+        this.clientePidao = clientePidao;
+    }
+
+    public Produto getProdutoPedidoCliente() {
+        return produtoPedidoCliente;
+    }
+
+    public void setProdutoPedidoCliente(Produto produtoPedidoCliente) {
+        this.produtoPedidoCliente = produtoPedidoCliente;
+    }
+
+    @Override
+    public String toString() {
+        return "Pedido\n idPedido = " + idPedido + "\n dataPedido = " + dataPedido + "\n status = " + status + "\n valorTotal = "
+                + valorTotal;
     }
 
     

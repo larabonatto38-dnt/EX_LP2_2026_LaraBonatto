@@ -3,6 +3,7 @@ public class Produto {
     private String nome;
     private int preco;
     private int quantidadeEstoque;
+    private Categoria categoriaProduto;
 
 
     public Produto(){
@@ -38,6 +39,20 @@ public class Produto {
     }
     public void setQuantidadeEstoque(int quantidadeEstoque) {
         this.quantidadeEstoque = quantidadeEstoque;
+    }
+
+    public Categoria getCategoriaProduto() {
+        return categoriaProduto;
+    }
+
+    public void setCategoriaProduto(Categoria categoriaProduto) {
+        this.categoriaProduto = categoriaProduto;
+    }
+
+    @Override
+    public String toString() {
+        return "Produto\n idProduto = " + idProduto + "\n nome = " + nome + "\n preco = " + preco + "\n quantidadeEstoque = "
+                + quantidadeEstoque;
     }
     
 }

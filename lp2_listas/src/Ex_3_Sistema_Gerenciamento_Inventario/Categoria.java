@@ -30,4 +30,9 @@ public class Categoria {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    @Override
+    public String toString() {
+        return "Categoria\n idCategoria = " + idCategoria + "\n nome = " + nome + "\n descricao = " + descricao;
+    }
 }

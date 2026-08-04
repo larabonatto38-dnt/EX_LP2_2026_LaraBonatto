@@ -3,6 +3,7 @@ public class Fornecedor {
     private String nomeEmpresa;
     private int cnpj;
     private int telefone;
+    private Produto produtoFornecido;
 
     public Fornecedor(){
     }
@@ -37,5 +38,19 @@ public class Fornecedor {
     }
     public void setTelefone(int telefone) {
         this.telefone = telefone;
+    }
+
+    public Produto getProdutoFornecido() {
+        return produtoFornecido;
+    }
+
+    public void setProdutoFornecido(Produto produtoFornecido) {
+        this.produtoFornecido = produtoFornecido;
+    }
+
+    @Override
+    public String toString() {
+        return "Fornecedor\n idFornecedor = " + idFornecedor + "\n nomeEmpresa = " + nomeEmpresa + "\n cnpj = " + cnpj
+                + "\n telefone = " + telefone;
     }
 }

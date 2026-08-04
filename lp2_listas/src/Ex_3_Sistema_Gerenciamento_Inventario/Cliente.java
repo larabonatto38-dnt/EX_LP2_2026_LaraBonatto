@@ -4,6 +4,7 @@ public class Cliente {
     private String email;
     private int telefone;
     private String endereco;
+    private Pedido pedidoCliente;
 
     public Cliente(){
     }
@@ -51,6 +52,14 @@ public class Cliente {
     public String toString() {
         return "Cliente\n idCliente = " + idCliente + "\n nome = " + nome + "\n email = " + email + "\n telefone = " + telefone
                 + "\n endereco = " + endereco;
+    }
+
+    public Pedido getPedidoCliente() {
+        return pedidoCliente;
+    }
+
+    public void setPedidoCliente(Pedido pedidoCliente) {
+        this.pedidoCliente = pedidoCliente;
     }
 
     
