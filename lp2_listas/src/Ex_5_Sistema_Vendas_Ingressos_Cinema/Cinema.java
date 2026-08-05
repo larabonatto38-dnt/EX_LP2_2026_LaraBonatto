@@ -3,6 +3,7 @@ public class Cinema {
     private int cnpj;
     private String endereco;
     private int telefone;
+    private Sala sala01;
 
     public Cinema(){
     }
@@ -36,6 +37,20 @@ public class Cinema {
     }
     public void setTelefone(int telefone) {
         this.telefone = telefone;
+    }
+
+    public Sala getSala01() {
+        return sala01;
+    }
+
+    public void setSala01(Sala sala01) {
+        this.sala01 = sala01;
+    }
+
+    @Override
+    public String toString() {
+        return "Cinema\n nome = " + nome + "\n cnpj = " + cnpj + "\n endereco = " + endereco + "\n telefone = " + telefone
+                + "\n sala01 = " + sala01;
     }
 
 }

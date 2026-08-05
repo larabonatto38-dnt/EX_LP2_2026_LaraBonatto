@@ -37,5 +37,11 @@ public class Ingresso {
     public void setHoraEmissao(int horaEmissao) {
         this.horaEmissao = horaEmissao;
     }
+
+    @Override
+    public String toString() {
+        return "Ingresso\n codigo = " + codigo + "\n precoPago = " + precoPago + "\n dataEmissao = " + dataEmissao
+                + "\n horaEmissao = " + horaEmissao;
+    }
     
 }

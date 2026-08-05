@@ -4,6 +4,7 @@ public class Cliente {
     private int cpf;
     private String email;
     private boolean temCadastro;
+    private Ingresso ingressoComprado;
 
     public Cliente(){
     }
@@ -44,6 +45,20 @@ public class Cliente {
     }
     public void setTemCadastro(boolean temCadastro) {
         this.temCadastro = temCadastro;
+    }
+
+    public Ingresso getIngressoComprado() {
+        return ingressoComprado;
+    }
+
+    public void setIngressoComprado(Ingresso ingressoComprado) {
+        this.ingressoComprado = ingressoComprado;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente\n nome = " + nome + "\n sobrenome = " + sobrenome + "\n cpf = " + cpf + "\n email = " + email
+                + "\n temCadastro = " + temCadastro + "\n ingressoComprado = " + ingressoComprado;
     }
     
 }

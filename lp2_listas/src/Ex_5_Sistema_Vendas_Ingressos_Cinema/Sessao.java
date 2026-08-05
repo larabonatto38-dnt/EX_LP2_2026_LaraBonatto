@@ -1,15 +1,15 @@
 public class Sessao {
     private int data;
     private int horarioInicio;
-    private int precoIngresso;
+    private Filme filmeSessao;
+    private Ingresso ingressoSessao;
 
     public Sessao(){
     }
 
-    public Sessao(int data, int horarioInicio, int precoIngresso) {
+    public Sessao(int data, int horarioInicio) {
         this.data = data;
         this.horarioInicio = horarioInicio;
-        this.precoIngresso = precoIngresso;
     }
     public int getData() {
         return data;
@@ -23,11 +23,27 @@ public class Sessao {
     public void setHorarioInicio(int horarioInicio) {
         this.horarioInicio = horarioInicio;
     }
-    public int getPrecoIngresso() {
-        return precoIngresso;
+
+    public Filme getFilmeSessao() {
+        return filmeSessao;
     }
-    public void setPrecoIngresso(int precoIngresso) {
-        this.precoIngresso = precoIngresso;
+
+    public void setFilmeSessao(Filme filmeSessao) {
+        this.filmeSessao = filmeSessao;
     }
-    
+
+    public Ingresso getIngressoSessao() {
+        return ingressoSessao;
+    }
+
+    public void setIngressoSessao(Ingresso ingressoSessao) {
+        this.ingressoSessao = ingressoSessao;
+    }
+
+    @Override
+    public String toString() {
+        return "Sessao\n data = " + data + "\n horarioInicio = " + horarioInicio + "\n filmeSessao = " + filmeSessao
+                + "\n ingressoSessao = " + ingressoSessao;
+    }
+
 }

@@ -29,5 +29,10 @@ public class Cadeira {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "Cadeira\n letraCadeira = " + letraCadeira + "\n numeroCadeira = " + numeroCadeira + "\n status = " + status;
+    }
     
 }
