@@ -48,5 +48,20 @@ public class Quarto {
         this.pacienteInternado = pacienteInternado;
     }
 
+    public void setCapacidadeHospedes(int i) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setCapacidadeHospedes'");
+    }
+
+    public void setPrecoDiaria(int i) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setPrecoDiaria'");
+    }
+
+    public void setReserva(Reserva reserva02) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setReserva'");
+    }
+
     
 }
