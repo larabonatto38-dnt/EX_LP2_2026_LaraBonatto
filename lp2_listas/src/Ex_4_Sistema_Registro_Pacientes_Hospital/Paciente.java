@@ -5,6 +5,7 @@ public class Paciente {
     private int cpf;
     private int dataNascimento;
     private int telefone;
+    private Medico medicoResponsavel;
 
     public Paciente(){
     }
@@ -53,6 +54,14 @@ public class Paciente {
     }
     public void setTelefone(int telefone) {
         this.telefone = telefone;
+    }
+
+    public Medico getMedicoResponsavel() {
+        return medicoResponsavel;
+    }
+
+    public void setMedicoResponsavel(Medico medicoResponsavel) {
+        this.medicoResponsavel = medicoResponsavel;
     }
 
     

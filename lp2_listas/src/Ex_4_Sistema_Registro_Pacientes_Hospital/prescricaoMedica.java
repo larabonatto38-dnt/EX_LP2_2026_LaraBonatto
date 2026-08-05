@@ -32,5 +32,21 @@ public class prescricaoMedica {
     public void setHoraPrescricao(int horaPrescricao) {
         this.horaPrescricao = horaPrescricao;
     }
+
+    public Medicamento getMedicamentoPrescrito() {
+        return medicamentoPrescrito;
+    }
+
+    public void setMedicamentoPrescrito(Medicamento medicamentoPrescrito) {
+        this.medicamentoPrescrito = medicamentoPrescrito;
+    }
+
+    public Enfermeira getEnfermeiraQueAdministra() {
+        return enfermeiraQueAdministra;
+    }
+
+    public void setEnfermeiraQueAdministra(Enfermeira enfermeiraQueAdministra) {
+        this.enfermeiraQueAdministra = enfermeiraQueAdministra;
+    }
     
 }

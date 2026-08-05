@@ -4,6 +4,7 @@ public class Internacao {
     private int dataEntrada;
     private int dataSaida;
     private String diagnosticoGeral;
+    private Quarto quarto;
 
     public Internacao(){
     }
@@ -37,6 +38,14 @@ public class Internacao {
     }
     public void setDiagnosticoGeral(String diagnosticoGeral) {
         this.diagnosticoGeral = diagnosticoGeral;
+    }
+
+    public Quarto getQuarto() {
+        return quarto;
+    }
+
+    public void setQuarto(Quarto quarto) {
+        this.quarto = quarto;
     }
 
     

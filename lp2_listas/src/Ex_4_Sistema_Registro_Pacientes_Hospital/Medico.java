@@ -2,6 +2,7 @@ public class Medico {
     private int idMedico;
     private String nome;
     private String especialidade;
+    private prescricaoMedica prescricaoFeita;
 
     public Medico(){
     }
@@ -29,5 +30,13 @@ public class Medico {
     }
     public void setEspecialidade(String especialidade) {
         this.especialidade = especialidade;
+    }
+
+    public prescricaoMedica getPrescricaoFeita() {
+        return prescricaoFeita;
+    }
+
+    public void setPrescricaoFeita(prescricaoMedica prescricaoFeita) {
+        this.prescricaoFeita = prescricaoFeita;
     }
 }

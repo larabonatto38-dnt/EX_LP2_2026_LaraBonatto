@@ -3,6 +3,7 @@ public class Quarto {
     private int andar;
     private String tipo;
     private String status; //ocupado, livre
+    private Paciente pacienteInternado;
 
     public Quarto(){
     }
@@ -37,6 +38,14 @@ public class Quarto {
     }
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public Paciente getPacienteInternado() {
+        return pacienteInternado;
+    }
+
+    public void setPacienteInternado(Paciente pacienteInternado) {
+        this.pacienteInternado = pacienteInternado;
     }
 
     
