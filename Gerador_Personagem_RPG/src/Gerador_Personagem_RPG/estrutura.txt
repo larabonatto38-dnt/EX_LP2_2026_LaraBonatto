@@ -1,0 +1,10 @@
+src/
+ └── Gerador_Personagem_RPG/
+      ├── model/
+      │     └── Personagem.java
+      ├── view/
+      │     ├── JanelaInicialView.java
+      │     └── TelaPrincipalView.java
+      ├── controller/
+      │     └── PersonagemController.java
+      └── App.java (ponto de entrada/main)
